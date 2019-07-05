@@ -16,4 +16,4 @@ bottle = gets.chomp.to_f
 
 shots = bottle / need_portion
 
-puts "В одной бутылке #{bottle.to_i} мл содержится #{shots.to_i} порций по #{need_portion} мл "
+puts "В одной бутылке #{bottle.to_i} мл содержится #{shots.to_i} порций по #{need_portion} мл"
