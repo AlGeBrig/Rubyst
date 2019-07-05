@@ -8,5 +8,12 @@ portion = gets.chomp.to_f
 puts "Введите необходимое количество вещества в одной порции"
 need = gets.chomp.to_f
 
-need_portion = con * need / portion
+need_portion = (con * need / portion).to_f
 puts "Вам нужна порция в #{need_portion} мл"
+
+puts "Объем 1 бутылки с л-карнитином в миллилитрах (граммах)"
+bottle = gets.chomp.to_f
+
+shots = bottle / need_portion
+
+puts "В одной бутылке #{bottle.to_i} мл содержится #{shots.to_i} порций по #{need_portion} мл "
