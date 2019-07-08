@@ -1,5 +1,14 @@
-puts "Программа рассчитывает количество 1 порции л-карнитина в зависимости от концентрации вещества в бутылки"
-print "Введите объем 1 порции (мл): "
+arr = "Программа рассчитывает количество 1 порции л-карнитина в зависимости от концентрации вещества в бутылке"
+
+# It would be nice to make a method to do substitution instead of writing arguments over and over again
+
+arr.size.times do |i|
+    print arr[i]
+    sleep 0.02
+end
+
+puts ""
+puts "Введите объем 1 порции (мл): "
 con = gets.chomp.to_f
 
 print "Введите количество вещества в одной порции: "
