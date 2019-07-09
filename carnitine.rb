@@ -2,13 +2,13 @@ arr = "Программа рассчитывает количество 1 пор
 
 # It would be nice to make a method to do substitution instead of writing arguments over and over again
 
-arr.size.times do |i|
+arr.split("") do |i|
     print arr[i]
     sleep 0.02
 end
 
 puts ""
-puts "Введите объем 1 порции (мл): "
+print "Введите объем 1 порции (мл): "
 con = gets.chomp.to_f
 
 print "Введите количество вещества в одной порции: "
