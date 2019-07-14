@@ -11,7 +11,7 @@ class Vehicle
     
     def initialize(year = 2004, model = "hyundao")
         @year = year.to_i
-        @model = model
+        @model = model.to_s
         @@number_of_vehicles += 1
     end
 
@@ -32,13 +32,13 @@ end
 class MyCar < Vehicle
     include Weight_passing
     YEARS = 15
-
+    
     def age
-        puts "Age of your #{self.model} is #{car_age} years"
+        puts "Age of your #{@model} is #{car_age} years"
     end
 
     def car_age
-        Time.now.year - self.year
+        Time.now.year - @year
     end
 end
 
